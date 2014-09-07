@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+	<LinearLayout 
+	    android:id="@+id/camera_layout"
+	    android:orientation="horizontal"
+	    android:layout_centerInParent="true"
+	    android:layout_width="444dip"
+    	android:layout_height="317dip"
+    	android:gravity="center"
+	    android:background="@drawable/touxiang_jiemiankuang">
+	    <FrameLayout 
+	        android:id="@+id/container"
+	        android:layout_marginTop="60dip"
+	        android:layout_marginBottom="45dip"
+	        android:layout_marginLeft="20dip"
+	        android:layout_marginRight="20dip"
+	    	android:layout_width="match_parent"
+	    	android:layout_height="match_parent">
+	        
+	    </FrameLayout>
+	</LinearLayout>
+    <ImageView 
+        android:id="@+id/camera_close"
+        android:layout_alignRight="@id/camera_layout"
+        android:layout_marginTop="20dip"
+        android:src="@drawable/touxiang_guanbi"
+    	android:layout_width="wrap_content"
+   		android:layout_height="wrap_content"/>
+
+</RelativeLayout>

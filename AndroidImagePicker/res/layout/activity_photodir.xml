@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+    <LinearLayout 
+	    android:id="@+id/album_choice_layout"
+	    android:orientation="horizontal"
+	    android:layout_centerInParent="true"
+	    android:layout_width="444dip"
+    	android:layout_height="317dip"
+    	android:gravity="center"
+	    android:background="@drawable/touxiang_jiemiankuang">
+	    
+	    <GridView
+	        android:id="@+id/album_choice_grid"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:cacheColorHint="@android:color/transparent"
+	        android:gravity="center"
+	        android:horizontalSpacing="5dip"
+	        android:listSelector="@android:color/transparent"
+	        android:numColumns="2"
+	        android:padding="3dip"
+	        android:layout_marginTop="60dip"
+	        android:layout_marginBottom="45dip"
+	        android:layout_marginLeft="20dip"
+	        android:layout_marginRight="20dip"
+	        android:scrollbars="none"
+	        android:stretchMode="columnWidth"
+	        android:verticalSpacing="5dip" >
+	    </GridView>
+	</LinearLayout>
+    <ImageView 
+        android:id="@+id/album_choice_close"
+        android:layout_alignRight="@id/album_choice_layout"
+        android:layout_marginTop="20dip"
+        android:src="@drawable/touxiang_guanbi"
+    	android:layout_width="wrap_content"
+   		android:layout_height="wrap_content"/>
+</RelativeLayout>
